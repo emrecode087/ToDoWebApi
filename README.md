@@ -21,8 +21,6 @@ docker run -p 8080:80 todoapp
 | ------ | -------------- | -------------------------------------------------------------- |
 | GET    | `/Todo`        | Tüm görevleri listeler                                         |
 | POST   | `/Todo`        | Yeni görev ekler (JSON gövde: `title`)                         |
-| PUT    | `/Todo/{id}`   | Görevi günceller (JSON: `title`, `isCompleted`)                |
-| DELETE | `/Todo/{id}`   | Görevi siler                                                   |
 
 #### JSON Örnekleri
 ~~~json

@@ -1,0 +1,29 @@
+@ToDoWebApi_HostAddress = http://localhost:5265
+
+# Get all todo items
+GET {{ToDoWebApi_HostAddress}}/todo
+Accept: application/json
+
+###
+
+# Add a new todo item
+POST {{ToDoWebApi_HostAddress}}/todo
+Content-Type: application/json
+
+"My first todo item"
+
+###
+
+# Add another todo item
+POST {{ToDoWebApi_HostAddress}}/todo
+Content-Type: application/json
+
+"Learn ASP.NET Core"
+
+###
+
+# Get all todo items again (to see added items)
+GET {{ToDoWebApi_HostAddress}}/todo
+Accept: application/json
+
+###
